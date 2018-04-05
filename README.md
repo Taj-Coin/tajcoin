@@ -37,8 +37,13 @@ Testnet P2P port: 71210
 Testnet RPC port: 7121
 
 Website: https://tajcoin.tech
+
 Forum: https://bitcointalk.org/index.php?topic=1545060.0;all
+
 Facebook: https://www.facebook.com/TajCoin
+
 Twitter: https://twitter.com/tajcoin
+
 Telegram: https://t.me/TajCoin
+
 Youtube:https://www.youtube.com/channel/UCSaebwQ-EzNCQ7Thji6g2kw
