@@ -140,6 +140,7 @@ public:
 
         vFixedSeeds.clear();
         vSeeds.push_back(CDNSSeedData("tajcoin.tech", "test1.tajcoin.tech"));
+        vSeeds.push_back(CDNSSeedData("tajcoin.tech", "test2.tajcoin.tech"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,111);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,196);
