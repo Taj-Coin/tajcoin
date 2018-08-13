@@ -126,8 +126,8 @@ public:
         pchMessageStart[3] = 0x13;
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 8);
         vAlertPubKey = ParseHex("04fd3abfe016aff55bd64a8b58a1ad35244c8c96c0afb761fa9ef1d6d5873a29bcba9517d73281c2b8932f0d018ce5ea1554f8ca9b8243639fe6a093617709ef4b");
-        nDefaultPort = 71210;
-        nRPCPort = 7121;
+        nDefaultPort = 7120;
+        nRPCPort = 7122;
         strDataDir = "testnet";
 
         // Modify the testnet genesis block so the timestamp is valid for a later start.
