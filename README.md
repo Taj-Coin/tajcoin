@@ -33,8 +33,6 @@ Network info:
 P2P port: 10712
 RPC port: 12107
 
-Testnet P2P port: 71210
-Testnet RPC port: 7121
 
 ### Website: https://tajcoin.tech
 
