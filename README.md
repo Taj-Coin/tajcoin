@@ -49,5 +49,11 @@ Testnet RPC port: 7121
 
 ### Instragram: https://www.instagram.com/tajcoin
 
-### MiningPools:  https://zpool.ca/
-https://cryptocartel.one/ aka https://blake2s.com, https://www.unimining.net/, https://minemoney.co/, https://ahashpool.com/, https://fairpool.pro/, http://blazepool.com/
+### MiningPools:  
+- https://zpool.ca/
+- https://cryptocartel.one/ aka https://blake2s.com
+- https://www.unimining.net/
+- https://minemoney.co/
+- https://ahashpool.com/
+- https://fairpool.pro/
+- http://blazepool.com/
