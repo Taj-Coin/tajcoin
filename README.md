@@ -1,7 +1,7 @@
 TAJCOIN
 ======
 
-Tajcoin is a proof-of-stake cryptocurrency with a focus on high performance, longevity and adoption services.
+Tajcoin is a proof-of-work/proof-of-stake cryptocurrency with a focus on high performance, longevity and adoption services.
 
 
 SPECIFICATIONS
