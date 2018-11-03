@@ -47,6 +47,8 @@ RPC port: 12107
 
 ### Instragram: https://www.instagram.com/tajcoin
 
+### Reddit: https://www.reddit.com/r/BlockmasterSi
+
 ### MiningPools:  
 - https://zpool.ca/
 - https://cryptocartel.one/ aka https://blake2s.com
