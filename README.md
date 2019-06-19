@@ -55,3 +55,4 @@ RPC port: 12107
 - https://ahashpool.com/
 - https://fairpool.pro/
 - http://blazepool.com/
+- https://www.mining-dutch.nl/
