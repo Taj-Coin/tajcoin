@@ -50,9 +50,4 @@ RPC port: 12107
 ### Reddit: https://www.reddit.com/r/BlockmasterSi
 
 ### MiningPools:  
-- https://cryptocartel.one/ aka https://blake2s.com
-- https://www.unimining.net/
-- https://ahashpool.com/
-- https://fairpool.pro/
-- http://blazepool.com/
-- https://www.mining-dutch.nl/
+- http://mineblocks.co.uk/getting_started
