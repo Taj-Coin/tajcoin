@@ -33,6 +33,14 @@ Network info:
 P2P port: 10712
 RPC port: 12107
 
+TajCoin blockchain snapshots/chain states/bootstrap.dat (pCloud: http://pc.cd/ACg)
+
+Responsible disclosure and security contact: security@tajcoin.tech
+
+Exchanges and listing contact (digital currency exchange representatives should take note Arco is an open source network with no premine/instamine or any type of crowdfunding and no listing fee budget is awailable): listings@tajcoin.tech
+
+Developers contact: dev@tajcoin.tech
+
 
 ### Website: https://tajcoin.tech
 
