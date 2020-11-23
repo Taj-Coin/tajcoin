@@ -33,6 +33,8 @@ Network info:
 P2P port: 10712
 RPC port: 12107
 
+## Bootstrap files / chain state
+
 TajCoin blockchain snapshots/chain states/bootstrap.dat (pCloud: http://pc.cd/ACg)
 TajCoin blockchain snapshots/chain states/bootstrap.dat (MS OneDrive: https://1drv.ms/u/s!AklKAv1s6c88gQyUUMX0tM2pPgtz?e=JO0Otb )
 
@@ -52,6 +54,7 @@ Developers contact: dev@tajcoin.tech
 ### Twitter: https://twitter.com/tajcoin
 
 ### Telegram: https://t.me/TajCoin
+
 ### Youtube:https://www.youtube.com/channel/UCSaebwQ-EzNCQ7Thji6g2kw
 
 ### Instragram: https://www.instagram.com/tajcoin
