@@ -53,6 +53,8 @@ Developers contact: dev@tajcoin.tech
 
 ### Twitter: https://twitter.com/tajcoin
 
+### Linkedin: https://www.linkedin.com/company/tajcoin
+
 ### Telegram: https://t.me/TajCoin
 
 ### Youtube:https://www.youtube.com/channel/UCSaebwQ-EzNCQ7Thji6g2kw
