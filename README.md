@@ -59,7 +59,7 @@ Developers contact: dev@tajcoin.tech
 
 ### Instragram: https://www.instagram.com/tajcoin
 
-### Reddit: https://www.reddit.com/r/BlockmasterSi
+### Reddit: https://www.reddit.com/r/TajCoinCryptoCurrency/
 
 ### MiningPools:  
 - Blake2s.com
