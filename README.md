@@ -45,23 +45,16 @@ Exchanges and listing contact (digital currency exchange representatives should 
 Developers contact: dev@tajcoin.tech
 
 
-### Website: https://tajcoin.tech
+## Website: https://tajcoin.tech
+## Forum: https://bitcointalk.org/index.php?topic=1545060.0;all
+## Facebook: https://www.facebook.com/TajCoin
+## Twitter: https://twitter.com/tajcoin
+## Linkedin: https://www.linkedin.com/company/tajcoin
+## Telegram: https://t.me/TajCoin
+## Youtube: https://www.youtube.com/watch?v=dG153JOCY6E 
+## Instragram: https://www.instagram.com/tajcoin
+## Reddit: https://www.reddit.com/r/TajCoinCryptoCurrency/
 
-### Forum: https://bitcointalk.org/index.php?topic=1545060.0;all
-
-### Facebook: https://www.facebook.com/TajCoin
-
-### Twitter: https://twitter.com/tajcoin
-
-### Linkedin: https://www.linkedin.com/company/tajcoin
-
-### Telegram: https://t.me/TajCoin
-
-### Youtube:https://www.youtube.com/channel/UCSaebwQ-EzNCQ7Thji6g2kw
-
-### Instragram: https://www.instagram.com/tajcoin
-
-### Reddit: https://www.reddit.com/r/TajCoinCryptoCurrency/
 
 ### MiningPools:  
 - Blake2s.com
