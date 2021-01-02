@@ -44,20 +44,32 @@ Exchanges and listing contact (digital currency exchange representatives should 
 
 Developers contact: dev@tajcoin.tech
 
+## Web and social
 
-## Website: https://tajcoin.tech
-## Forum: https://bitcointalk.org/index.php?topic=1545060.0;all
-## Facebook: https://www.facebook.com/TajCoin
-## Twitter: https://twitter.com/tajcoin
-## Linkedin: https://www.linkedin.com/company/tajcoin
-## Telegram: https://t.me/TajCoin
-## Youtube: https://www.youtube.com/watch?v=dG153JOCY6E 
-## Instragram: https://www.instagram.com/tajcoin
-## Reddit: https://www.reddit.com/r/TajCoinCryptoCurrency/
+# Website: https://tajcoin.tech
+# Forum: https://bitcointalk.org/index.php?topic=1545060.0;all
+# Facebook: https://www.facebook.com/TajCoin
+# Twitter: https://twitter.com/tajcoin
+# Linkedin: https://www.linkedin.com/company/tajcoin
+# Telegram: https://t.me/TajCoin
+# Youtube: https://www.youtube.com/watch?v=dG153JOCY6E 
+# Instragram: https://www.instagram.com/tajcoin
+# Reddit: https://www.reddit.com/r/TajCoinCryptoCurrency/
 
+## Exchanges
 
-### MiningPools:  
-- Blake2s.com
-- https://cryptogrinder.com
+## MarketData
+
+* CoinPaprika https://coinpaprika.com/coin/taj-tajcoin/
+* CoinGecko https://www.coingecko.com/en/coins/tajcoin
+* CoinMarketCap https://coinmarketcap.com/currencies/tajcoin/
+* CoinCodex https://coincodex.com/crypto/tajcoin/
+* WorldCoinIndex https://www.worldcoinindex.com/coin/tajcoin
+
+## MiningPools:  
+
+* https://pool.atomminer.com/
+* Blake2s.com
+* https://cryptogrinder.com
 
 
