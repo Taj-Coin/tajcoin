@@ -56,14 +56,15 @@ Developers contact: dev@tajcoin.tech
 * Instragram: https://www.instagram.com/tajcoin
 * Reddit: https://www.reddit.com/r/TajCoinCryptoCurrency/
 
-## Exchanges
+## Exchanges:
 
 * Tokens.net https://tkns.me/taj
 * FreiExchange.com https://freiexchange.com/market/TAJ/BTC
 * UnnamedExchange.com https://www.unnamed.exchange/CoinInfo?id=TAJ
 * Bololex.com http://bololex.tajcoin.tech
 * Yobit.net http://yobit.tajcoin.tech
-## MarketData
+
+## MarketData:
 
 * CoinPaprika https://coinpaprika.com/coin/taj-tajcoin/
 * CoinGecko https://www.coingecko.com/en/coins/tajcoin
@@ -74,7 +75,16 @@ Developers contact: dev@tajcoin.tech
 ## MiningPools:  
 
 * https://pool.atomminer.com/
-* Blake2s.com
 * https://cryptogrinder.com
 
+## Mining info
+* https://wheretomine.io/coins/tajcoin
+* https://miningpoolstats.stream/tajcoin
+
+## TajCoin on the web:
+
+* https://coincost.net/en/currency/tajcoin
+* https://www.cryptocompare.com/coins/taj/overview
+* https://cmc.io/coins/tajcoin
+* https://icoholder.com/en/tajcoin-25543
 
