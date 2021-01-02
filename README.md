@@ -46,15 +46,15 @@ Developers contact: dev@tajcoin.tech
 
 ## Web and social
 
-# Website: https://tajcoin.tech
-# Forum: https://bitcointalk.org/index.php?topic=1545060.0;all
-# Facebook: https://www.facebook.com/TajCoin
-# Twitter: https://twitter.com/tajcoin
-# Linkedin: https://www.linkedin.com/company/tajcoin
-# Telegram: https://t.me/TajCoin
-# Youtube: https://www.youtube.com/watch?v=dG153JOCY6E 
-# Instragram: https://www.instagram.com/tajcoin
-# Reddit: https://www.reddit.com/r/TajCoinCryptoCurrency/
+* Website: https://tajcoin.tech
+* Forum: https://bitcointalk.org/index.php?topic=1545060.0;all
+* Facebook: https://www.facebook.com/TajCoin
+* Twitter: https://twitter.com/tajcoin
+* Linkedin: https://www.linkedin.com/company/tajcoin
+* Telegram: https://t.me/TajCoin
+* Youtube: https://www.youtube.com/watch?v=dG153JOCY6E 
+* Instragram: https://www.instagram.com/tajcoin
+* Reddit: https://www.reddit.com/r/TajCoinCryptoCurrency/
 
 ## Exchanges
 
