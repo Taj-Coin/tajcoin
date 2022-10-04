@@ -68,6 +68,7 @@ Developers contact: dev@tajcoin.tech
 
 * CoinPaprika https://coinpaprika.com/coin/taj-tajcoin/
 * CoinGecko https://www.coingecko.com/en/coins/tajcoin
+* CoinLore https://www.coinlore.com/coin/tajcoin
 * CoinMarketCap https://coinmarketcap.com/currencies/tajcoin/
 * CoinCodex https://coincodex.com/crypto/tajcoin/
 * WorldCoinIndex https://www.worldcoinindex.com/coin/tajcoin
