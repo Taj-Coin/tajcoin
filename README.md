@@ -58,7 +58,7 @@ Developers contact: dev@tajcoin.tech
 
 ## Exchanges:
 
-* Tokens.net https://tkns.me/taj
+* Xeggex.com https://xeggex.com/asset/TAJ
 * FreiExchange.com https://freiexchange.com/market/TAJ/BTC
 * UnnamedExchange.com https://www.unnamed.exchange/CoinInfo?id=TAJ
 * Bololex.com http://bololex.tajcoin.tech
