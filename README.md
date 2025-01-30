@@ -60,7 +60,6 @@ Developers contact: dev@tajcoin.tech
 
 * Xeggex.com https://xeggex.com/asset/TAJ
 * FreiExchange.com https://freiexchange.com/market/TAJ/BTC
-* Bololex.com http://bololex.tajcoin.tech
 * NonKYC.io http://nonkyc.tajcoin.tech/
 
 
