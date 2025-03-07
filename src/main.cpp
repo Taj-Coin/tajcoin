@@ -1011,7 +1011,18 @@ int64_t GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees, int nHeight)
 {
     int64_t nSubsidy;
 
-    nSubsidy = nCoinAge * COIN_YEAR_REWARD * 33 / (365 * 33 + 8);
+    if (nHeight >= FORK_HEIGHT) {
+      // Limit nCoinAge
+      nCoinAge = std::min(nCoinAge, (int64_t)(365 * 33));
+
+      // Calculate reward
+      nSubsidy = nCoinAge * COIN_YEAR_REWARD * 33 / (365 * 33 + 8);
+
+      // Apply cap
+      nSubsidy = std::min(nSubsidy, MAX_STAKE_REWARD);
+    } else {
+      nSubsidy = nCoinAge * COIN_YEAR_REWARD * 33 / (365 * 33 + 8);
+    }
 
     LogPrint("creation", "GetProofOfStakeReward(): create=%s nCoinAge=%d nHeight=%d\n", FormatMoney(nSubsidy), nCoinAge, nHeight);
 
@@ -1033,6 +1044,10 @@ unsigned int GetNextTargetRequired(const CBlockIndex* pindexLast, bool fProofOfS
     if (pindexLast == NULL)
         return bnTargetLimit.GetCompact(); // genesis block
 
+    if (fProofOfStake && pindexLast->nHeight >= FORK_HEIGHT) {
+      bnTargetLimit = std::max(bnTargetLimit, MAX_POS_DIFFICULTY);
+    }
+
     const CBlockIndex* pindexPrev = GetLastBlockIndex(pindexLast, fProofOfStake);
     if (pindexPrev->pprev == NULL)
         return bnTargetLimit.GetCompact(); // first block
@@ -1045,6 +1060,12 @@ unsigned int GetNextTargetRequired(const CBlockIndex* pindexLast, bool fProofOfS
     if (nActualSpacing < 0)
             nActualSpacing = nTargetSpacing;
 
+    if (fProofOfStake && pindexLast->nHeight >= FORK_HEIGHT) {
+      nActualSpacing = std::min(nActualSpacing, nTargetSpacing * 3);
+    } else {
+      nActualSpacing = std::min(nActualSpacing, nTargetSpacing * 10);
+    }
+
     if (nActualSpacing > nTargetSpacing * 10)
             nActualSpacing = nTargetSpacing * 10;
 
@@ -1054,8 +1075,16 @@ unsigned int GetNextTargetRequired(const CBlockIndex* pindexLast, bool fProofOfS
     CBigNum bnNew;
     bnNew.SetCompact(pindexPrev->nBits);
     int64_t nInterval = nTargetTimespan / nTargetSpacing;
-    bnNew *= ((nInterval - 1) * nTargetSpacing + nActualSpacing + nActualSpacing);
-    bnNew /= ((nInterval + 1) * nTargetSpacing);
+
+    if (fProofOfStake && pindexLast->nHeight >= FORK_HEIGHT) {
+      // Softer adjustment post-fork
+      bnNew *= ((nInterval - 1) * nTargetSpacing + nActualSpacing);
+      bnNew /= (nInterval * nTargetSpacing);
+    } else {
+      // Old calculation
+      bnNew *= ((nInterval - 1) * nTargetSpacing + nActualSpacing + nActualSpacing);
+      bnNew /= ((nInterval + 1) * nTargetSpacing);
+    }
 
     if (bnNew <= 0 || bnNew > bnTargetLimit)
         bnNew = bnTargetLimit;
