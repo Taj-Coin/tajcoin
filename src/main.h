@@ -53,6 +53,10 @@ inline bool MoneyRange(int64_t nValue) { return (nValue >= 0 && nValue <= MAX_MO
 /** Threshold for nLockTime: below this value it is interpreted as block number, otherwise as UNIX timestamp. */
 static const unsigned int LOCKTIME_THRESHOLD = 500000000; // Tue Nov  5 00:53:20 1985 UTC
 
+static const int FORK_HEIGHT = 900000; // Fork height
+static const int64_t MAX_STAKE_REWARD = 10 * COIN; // Max 10 TAJ
+static const CBigNum MAX_POS_DIFFICULTY(50); // Max difficulty 50
+
 static const int64_t COIN_YEAR_REWARD = 369/100 * CENT; // 3.69% per year
 
 inline int64_t FutureDrift(int64_t nTime, int nHeight) { return nTime + 30 * 60; }
