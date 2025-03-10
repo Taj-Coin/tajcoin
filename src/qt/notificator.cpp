@@ -82,7 +82,7 @@ public:
     FreedesktopImage() {}
     FreedesktopImage(const QImage &img);
 
-    static int metaType();
+    static QMetaType metaType();
 
     // Image to variant that can be marshalled over DBus
     static QVariant toVariant(const QImage &img);
@@ -145,7 +145,7 @@ const QDBusArgument &operator>>(const QDBusArgument &a, FreedesktopImage &i)
     return a;
 }
 
-int FreedesktopImage::metaType()
+QMetaType FreedesktopImage::metaType()
 {
     return qDBusRegisterMetaType<FreedesktopImage>();
 }
