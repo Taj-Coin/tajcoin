@@ -253,7 +253,7 @@ Value checkkernel(const Array& params, bool fHelp)
         return result;
 
     int64_t nFees;
-    auto_ptr<CBlock> pblock(CreateNewBlock(*pMiningKey, true, &nFees));
+    std::unique_ptr<CBlock> pblock(CreateNewBlock(*pMiningKey, true, &nFees));
 
     pblock->nTime = pblock->vtx[0].nTime = nTime;
 

@@ -15,6 +15,8 @@
 #include "walletdb.h"
 
 #include <boost/algorithm/string/replace.hpp>
+#include <algorithm>
+#include <random>
 
 using namespace std;
 
@@ -1232,7 +1234,9 @@ bool CWallet::SelectCoinsMinConf(int64_t nTargetValue, unsigned int nSpendTime, 
     vector<pair<int64_t, pair<const CWalletTx*,unsigned int> > > vValue;
     int64_t nTotalLower = 0;
 
-    random_shuffle(vCoins.begin(), vCoins.end(), GetRandInt);
+    std::random_device rd;
+    std::mt19937 g(rd());
+    std::shuffle(vCoins.begin(), vCoins.end(), g);
 
     BOOST_FOREACH(COutput output, vCoins)
     {
