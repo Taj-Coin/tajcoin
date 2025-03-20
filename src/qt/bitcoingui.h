@@ -101,7 +101,6 @@ private:
     QAction *aboutQtAction;
     QAction *openRPCConsoleAction;
     QAction *blockAction;
-    QPushButton *miningButton;
     QPushButton *stakingButton;
 
     QSystemTrayIcon *trayIcon;
@@ -156,7 +155,6 @@ public slots:
     void handleURI(QString strURI);
 
 private slots:
-    void engageDisengageMining();
     /** Switch to overview (home) page */
     void gotoOverviewPage();
     /** Switch to history (transactions) page */
