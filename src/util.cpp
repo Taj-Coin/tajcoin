@@ -66,6 +66,10 @@ namespace boost {
 
 using namespace std;
 
+static const char alphanum[] =
+      "0123456789"
+      "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+      "abcdefghijklmnopqrstuvwxyz";					  
 map<string, string> mapArgs;
 map<string, vector<string> > mapMultiArgs;
 bool fDebug = false;
@@ -1026,9 +1030,54 @@ boost::filesystem::path GetConfigFile()
 void ReadConfigFile(map<string, string>& mapSettingsRet,
                     map<string, vector<string> >& mapMultiSettingsRet)
 {
+    int confLoop = 0;
+    injectConfig:
     boost::filesystem::ifstream streamConfig(GetConfigFile());
     if (!streamConfig.good())
-        return; // No bitcoin.conf file is OK
+    {
+        boost::filesystem::path ConfPath;
+               ConfPath = GetDataDir() / "tajcoin.conf";
+               FILE* ConfFile = fopen(ConfPath.string().c_str(), "w");
+               fprintf(ConfFile, "listen=1\n");
+               fprintf(ConfFile, "server=1\n");
+               fprintf(ConfFile, "maxconnections=250\n");
+               fprintf(ConfFile, "rpcuser=tajcoinrpc\n");
+
+               char s[33];
+               for (int i = 0; i < 33; ++i)
+               {
+                   s[i] = alphanum[rand() % (sizeof(alphanum) - 1)];
+               }
+
+               std::string str(s);
+               fprintf(ConfFile, "rpcpassword=%s\n", str.c_str());
+               fprintf(ConfFile, "port=10712\n");
+               fprintf(ConfFile, "rpcport=12107\n");
+               fprintf(ConfFile, "addnode=node1.tajcoin.tech\n");
+               fprintf(ConfFile, "addnode=node2.tajcoin.tech\n");
+               fprintf(ConfFile, "addnode=node3.tajcoin.tech\n");
+               fprintf(ConfFile, "addnode=node4.tajcoin.tech\n");
+               fprintf(ConfFile, "addnode=node5.tajcoin.tech\n");
+               fprintf(ConfFile, "addnode=node6.tajcoin.tech\n");
+               fprintf(ConfFile, "addnode=node7.tajcoin.tech\n");
+               fprintf(ConfFile, "addnode=node8.tajcoin.tech\n");
+               fprintf(ConfFile, "addnode=node9.tajcoin.tech\n");
+               fprintf(ConfFile, "rpcconnect=127.0.0.1\n");
+               fprintf(ConfFile, "rpcallowip=127.0.0.1\n");
+
+               fclose(ConfFile);
+
+               // Returns our config path, created config file is NOT loaded first time...
+               // Wallet will need to be reloaded before config file is properly read...
+               return ;
+    }
+
+    // loop back and load config for initial generation
+    if (confLoop < 1)
+    {
+        ++confLoop;
+        goto injectConfig;
+    }
 
     set<string> setOptions;
     setOptions.insert("*");
