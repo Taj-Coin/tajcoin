@@ -39,7 +39,6 @@
 #include "macdockiconhandler.h"
 #endif
 
-#include <QtWidgets>
 #include <QMenuBar>
 #include <QMenu>
 #include <QIcon>
@@ -373,22 +372,6 @@ static QWidget* makeToolBarSpacer()
     return spacer;
 }
 
-void BitcoinGUI::engageDisengageMining()
-{
-    if(isMiningEngaged)
-    {
-	isMiningEngaged = false;
-	miningButton->setText("Start Mining");
-	GenerateBitcoins(false, pwalletMain, 0);
-    }
-    else
-    {
-	isMiningEngaged = true;
-	miningButton->setText("Stop Mining");
-	GenerateBitcoins(true, pwalletMain, 1);
-    }
-}
-
 void BitcoinGUI::createToolBars()
 {
     toolbar = new QToolBar(tr("Tabs toolbar"));
@@ -417,22 +400,7 @@ void BitcoinGUI::createToolBars()
     mineWidget->setObjectName("mineWidget");
     mineWidget->setStyleSheet("#mineWidget");
     QVBoxLayout *mbox = new QVBoxLayout();
-    miningButton = new QPushButton(this);
-    mbox->addWidget(miningButton);
-    if(!GetBoolArg("-gen", false))
-    {
-        miningButton->setText("Start Mining");
-	isMiningEngaged = false;
-    }
-    else
-    {
-	miningButton->setText("Stop Mining");
-	isMiningEngaged = true;
-    }
-    miningButton->setMinimumSize(130,25);
-    miningButton->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
-    mineWidget->setLayout(mbox);
-    connect(miningButton, SIGNAL(released()), this, SLOT(engageDisengageMining()));
+	mineWidget->setLayout(mbox);							
     toolbar->addWidget(mineWidget);
 
     toolbar->setOrientation(Qt::Vertical);
