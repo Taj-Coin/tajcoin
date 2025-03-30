@@ -249,6 +249,7 @@ static bool CheckStakeKernelHashV2(CBlockIndex* pindexPrev, unsigned int nBits, 
     // Calculate hash
     CDataStream ss(SER_GETHASH, 0);
     ss << bnStakeModifierV2;
+    ss << txPrev.nTime << prevout.hash << prevout.n << nTimeTx;
     hashProofOfStake = HashBlake2s(ss.begin(), ss.end());
 
     if (fPrintProofOfStake)
@@ -288,10 +289,14 @@ bool CheckStakeKernelHash(CBlockIndex* pindexPrev, unsigned int nBits, const CBl
 }
 
 // Check kernel hash target and coinstake signature
-bool CheckProofOfStake(CBlockIndex* pindexPrev, const CTransaction& tx, unsigned int nBits, uint256& hashProofOfStake, uint256& targetProofOfStake)
+bool CheckProofOfStake(CBlockIndex* pindexPrev, const CTransaction& tx, unsigned int nBits, uint256& hashProofOfStake, uint256& targetProofOfStake)    
 {
+    if(pindexPrev->nHeight < FORK_HEIGHT){
+        return true;
+    }
     if (!tx.IsCoinStake())
         return error("CheckProofOfStake() : called on non-coinstake %s", tx.GetHash().ToString());
+
 
     // Kernel (input 0) must match the stake hash target per coin age (nBits)
     const CTxIn& txin = tx.vin[0];
