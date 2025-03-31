@@ -1040,6 +1040,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
                FILE* ConfFile = fopen(ConfPath.string().c_str(), "w");
                fprintf(ConfFile, "listen=1\n");
                fprintf(ConfFile, "server=1\n");
+               fprintf(ConfFile, "daemon=1\n");
                fprintf(ConfFile, "maxconnections=250\n");
                fprintf(ConfFile, "rpcuser=tajcoinrpc\n");
 
