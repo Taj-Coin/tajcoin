@@ -55,7 +55,7 @@ static const unsigned int LOCKTIME_THRESHOLD = 500000000; // Tue Nov  5 00:53:20
 
 static const int FORK_HEIGHT = 900049; // Fork height
 static const int64_t MAX_STAKE_REWARD = 10 * COIN; // Max 10 TAJ
-static const CBigNum MAX_POS_DIFFICULTY(50); // Max difficulty 50
+static const CBigNum MAX_POS_DIFFICULTY = 50; // Max difficulty 50
 
 static const int64_t COIN_YEAR_REWARD = 369/100 * CENT; // 3.69% per year
 

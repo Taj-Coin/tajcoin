@@ -1,4 +1,4 @@
-<!DOCTYPE RCC><RCC version="1.0">
+<RCC>
     <qresource prefix="/icons">
         <file alias="tajcoin">res/icons/tajcoin-32.png</file>
         <file alias="address-book">res/icons/address-book.png</file>
@@ -23,8 +23,8 @@
         <file alias="editpaste">res/icons/editpaste.png</file>
         <file alias="editcopy">res/icons/editcopy.png</file>
         <file alias="add">res/icons/add.png</file>
-        <file alias="tajcoin_testnet">res/icons/tajcoin_testnet.png</file>
-        <file alias="toolbar_testnet">res/icons/tajcoin_testnet-16.png</file>
+        <file alias="tajcoin_testnet">res/icons/tajcoin-80.png</file>
+        <file alias="toolbar_testnet">res/icons/tajcoin-16.png</file>
         <file alias="edit">res/icons/edit.png</file>
         <file alias="history">res/icons/history.png</file>
         <file alias="overview">res/icons/overview.png</file>
@@ -65,6 +65,15 @@
         <file alias="about">res/images/about.png</file>
         <file alias="splash">res/images/splash.png</file>
         <file alias="header">res/images/header.png</file>
+        <file alias="background">res/images/background.png</file>
+        <file>res/images/Logo.png</file>
+    </qresource>
+    <qresource prefix="/images/black">
+        <file alias="about">res/images/black/about.png</file>
+        <file alias="splash">res/images/black/splash.png</file>
+        <file alias="header">res/images/black/header.png</file>
+        <file alias="background">res/images/background.png</file>
+        <file>res/images/black/Logo.png</file>
     </qresource>
     <qresource prefix="/movies">
         <file alias="update_spinner">res/movies/update_spinner.mng</file>
