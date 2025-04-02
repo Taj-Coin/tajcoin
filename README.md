@@ -58,6 +58,7 @@ Developers contact: dev@tajcoin.tech
 
 ## Exchanges:
 
+* Dexomy.com https://dexomy.com/exchange/dashboard?coin_pair=TAJ_USDT
 * Xeggex.com https://xeggex.com/asset/TAJ
 * FreiExchange.com https://freiexchange.com/market/TAJ/BTC
 * NonKYC.io http://nonkyc.tajcoin.tech/
