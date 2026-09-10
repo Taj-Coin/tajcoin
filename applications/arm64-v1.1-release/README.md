@@ -1,47 +1,40 @@
-# Tajcoin v1.1 — builds ARM64 (aarch64)
+# Tajcoin v1.1 — ARM64 (aarch64) builds
 
-Paquet préparé pour contribution à [Taj-Coin/tajcoin](https://github.com/Taj-Coin/tajcoin) — release **v1.1**.
+ARM64 (aarch64) build artifacts for Tajcoin **v1.1**, contributed to [Taj-Coin/tajcoin](https://github.com/Taj-Coin/tajcoin).
 
-## Fichiers prêts à soumettre
+## Files
 
-| Fichier | Contenu | Statut |
-|---------|---------|--------|
-| `tajcoind-arm64-v1.1.zip` | `tajcoind` daemon, aarch64, stripped (~3,2 Mo) | **Prêt** |
-| `tajcoin-qt_1.1.0.0-1_arm64.deb` | Wallet Qt ARM64, stripped (~14 Mo) | **Prêt** |
-| `tajcoin-qt-arm64-v1.1.zip` | `tajcoin-qt` extrait du .deb (aarch64) | **Prêt** |
-| `tajcoind-arm64-v1.1-unstripped.zip` | Archive debug (~84 Mo) — **ne pas publier upstream** | Référence build |
+| File | Content | Notes |
+|------|---------|-------|
+| `tajcoind-arm64-v1.1.zip` | `tajcoind` daemon, aarch64, stripped (~3.2 MB) | Ready |
+| `tajcoin-qt_1.1.0.0-1_arm64.deb` | Qt wallet, ARM64, stripped (~14 MB) | Ready |
+| `tajcoin-qt-arm64-v1.1.zip` | `tajcoin-qt` extracted from the .deb (aarch64) | Ready |
+| `tajcoind-arm64-v1.1-unstripped.zip` | Debug archive (~84 MB) — **do not distribute** | Build reference |
 
-Checksums : voir `SHA256SUMS`.
+Checksums: see `SHA256SUMS`.
 
-## ⚠️ Fichier à ne pas soumettre
+## ⚠️ Do not use
 
-`../tajcoin-qt-arm64.zip` (dossier parent) contient un binaire **x86_64**, pas ARM64 — utiliser uniquement `tajcoin-qt-arm64-v1.1.zip` de ce dossier.
+`../tajcoin-qt-arm64.zip` (parent folder) contains an **x86_64** binary, not ARM64 — use only `tajcoin-qt-arm64-v1.1.zip` from this folder.
 
-## Build `tajcoind` (strip sur ARM)
+## Building `tajcoind` (strip on ARM)
 
-Effectué sur Raspberry Pi **aarch64** (`192.168.1.31`) :
+Performed on a Raspberry Pi **aarch64**:
 
 ```bash
-strip tajcoind   # 84 Mo → 3,2 Mo
-zip tajcoind-arm64-v1.1.zip tajcoind   # ~1,3 Mo
+strip tajcoind   # 84 MB → 3.2 MB
+zip tajcoind-arm64-v1.1.zip tajcoind   # ~1.3 MB
 ```
 
-## Cibles testées
+## Tested targets
 
-- **Architecture** : `aarch64` (ARM64)
-- **tajcoin-qt .deb** : Debian/Ubuntu récents (deps Boost 1.83, Qt5 — voir `dpkg-deb -I`)
-- **tajcoind** : ELF dynamique, `ld-linux-aarch64.so.1`
+- **Architecture**: `aarch64` (ARM64)
+- **tajcoin-qt .deb**: recent Debian/Ubuntu (Boost 1.83, Qt5 deps — see `dpkg-deb -I`)
+- **tajcoind**: dynamic ELF, `ld-linux-aarch64.so.1`
 
-## Prochaine étape upstream
-
-1. Ouvrir l’issue : texte dans `ISSUE-UPSTREAM.md`
-2. Contacter **dev@tajcoin.tech**
-3. Proposer les assets pour [Release v1.1](https://github.com/Taj-Coin/tajcoin/releases/tag/v1.1) ou **v1.1.1**
-4. (Optionnel) PR avec script `contrib/build-arm64.sh` — build reproductible depuis le tag `v1.1`
-
-## Vérification locale
+## Local verification
 
 ```bash
-file tajcoind tajcoin-qt   # doit afficher ARM aarch64
+file tajcoind tajcoin-qt   # must report ARM aarch64
 sha256sum -c SHA256SUMS
 ```
